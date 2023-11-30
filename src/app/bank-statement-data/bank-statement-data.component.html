@@ -1,0 +1,40 @@
+<app-tool></app-tool>
+<div class="content">
+    <h2>Bank Statemets</h2>
+    <div class="container">
+        <div class="search-container">
+            <input type="text" placeholder="Search Customer" class="search-input">
+            <button class="icon-button">
+                <i class="fa-solid fa-magnifying-glass"></i>
+            </button>
+        </div>
+
+      <div>
+        <table>
+    <thead>
+        <tr class="thead">
+
+            <th>File Name</th>
+            <th>File URL</th>
+            <th>Action</th>
+
+    
+        </tr>
+    </thead>
+    <tbody *ngIf="bankStatements">
+        <tr class="body" *ngFor="let data of bankStatements " >
+            <td>{{data.file_name}}</td>
+            <td>{{data.file_url}}</td>
+            <td>
+                <div class="action-buttons">
+                    <button (click)="redirectToPage()" >See Data File
+                        <i class="fa-solid fa-eye"></i>
+                    </button>
+                    <button>Delete
+                        <i class="fa-solid fa-trash-can"></i>
+                    </button>
+                </div>
+            </td>
+        </tr>
+    </tbody>
+</table>

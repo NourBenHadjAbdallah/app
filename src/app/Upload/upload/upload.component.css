@@ -1,0 +1,36 @@
+.upload-box {
+    border: 1px solid #ccc;
+    padding: 20px;
+    position: absolute;
+    border-radius: 10px;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    align-items: center;
+}
+
+.upload-box i {
+    left: 50%;
+    right: 50%;
+    position: relative;
+    
+}
+.upload-box p {
+    text-align: center;
+    font-size: 16px;
+    padding: 10px;
+   
+}
+.button {
+    align-items: center;
+}
+
+.submit {
+    background-color: #5782C7;
+    border-radius: 5px;
+    margin: 10px;
+    padding: 10px 20px;
+    border: 0px solid #ccc;
+    cursor: pointer;
+    color: white;
+}

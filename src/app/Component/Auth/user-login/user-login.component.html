@@ -1,0 +1,32 @@
+
+
+<div class="content">
+    <div class="login">
+        <span>Login</span>
+        <div class="input-icon">
+            <i class="fa-regular fa-user"></i>
+            <input class="input-box" type="text" [(ngModel)]="Login.username" placeholder="Username">
+        </div>
+        <div>
+            <i class="fa-solid fa-lock"></i>
+            <input class="input-box" type="password" [(ngModel)]="Login.password" placeholder="Password">
+        </div>
+        <div >
+            <label>
+                <input type="checkbox" checked="checked" name="remember"> Remember me
+            </label>
+            <a class="forgot-password" href="/forgetpass">Forgot password?</a>
+        </div>
+
+        <div class="btn">
+            <button type="submit" (click)="login(Login.username, Login.password)">Login</button>
+        </div>
+
+
+    
+    </div>
+    <div class="imgcontainer">
+        <img class="u-expanded-width" src="assets/img/login.png" alt="Login">
+    </div>
+
+</div>

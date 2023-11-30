@@ -1,0 +1,40 @@
+
+
+
+  <app-tool></app-tool>
+<div class="content">
+    <h2>Transaction</h2>
+    <div class="container">
+        <div class="search-container">
+            <input type="text" placeholder="Search Customer" class="search-input">
+            <button class="icon-button">
+                <i class="fa-solid fa-magnifying-glass"></i>
+            </button>
+        </div>
+
+      <div>
+        <table>
+    <thead>
+        <tr class="thead">
+          <th scope="col">Date</th>
+          <th scope="col">Description</th>
+          <th scope="col">Credit</th>
+          <th scope="col">Debit</th>
+          <th scope="col"></th>
+        </tr>
+    </thead>
+    <tbody *ngIf="transactions">
+      <tr *ngFor="let transaction of transactions " style="text-align:center" >
+        <td>{{ transaction.Date  }}</td>
+        <td>{{ transaction.Description}}</td>
+        <td>{{ transaction.Credit }}</td>
+        <td>{{ transaction.Debit }}</td>
+        <td>
+          <div class="form-group">
+            <a class="status_btn" (click)="deleteTransaction(transaction.TransactionID)" class="fa-regular fa-trash-can" style="color: #ff0000;"></a>
+            <a class="status_btn" (click)="editTransaction(transaction.TransactionID)" class="fa-solid fa-pen-to-square" style="color: #0d61f2;"></a>
+          </div>
+        </td>
+      </tr>
+    </tbody>
+</table>

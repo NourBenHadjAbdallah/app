@@ -1,0 +1,15 @@
+<div class="parsed" *ngIf="mydata">
+    <ul *ngFor="let data of data">
+      <li><label>Account Number:</label> {{data.AccountNumber}}</li>
+      <li><label>Agency:</label> {{data.Agency}}</li>
+      <li><label>Account Type:</label> {{data.AccountType}}</li>
+      <li><label>Customer Currency:</label> {{data.AccountCurrency}}</li>
+      <li><label>Customer Name:</label> {{data.CustomerName}}</li>
+      <li><label>Customer Address:</label> {{data.CustomerAddress}}</li>
+      <li><label>Bank:</label> {{data.BankNumber}}</li>
+      <li><label>StatementDate:</label> {{data.StatementDate}}</li>
+      <li><label>OpeningBalance:</label> {{data.OpeningBalance}}</li>
+      <li><label>ClosingBalance:</label> {{data.ClosingBalance}}</li>
+    </ul>
+  </div>
+

@@ -1,0 +1,35 @@
+#control-panel {
+    background-color: #5782C7;
+    padding: 10px;
+    border-radius: 5px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+  }
+  
+  #control-panel .dropdown, #clear-all-selections, #restore-detected-tables, #all-data {
+    display: inline-block;
+    margin-left: 10px;
+  }
+  
+  #control-panel span {
+    display: inline-block;
+    margin-right: 10px;
+  }
+  #control-panel button {
+    background-color: #868e96;
+    color: #fff;
+    border: none;
+    padding: 8px 15px;
+    margin-left: 10px;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+
+  .filename {
+    font-weight: bold;
+    color: #fff;
+    font-family: Arial, Helvetica, sans-serif;
+  }
+    

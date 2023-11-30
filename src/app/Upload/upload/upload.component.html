@@ -1,0 +1,38 @@
+<app-tool></app-tool>
+<!--<div class="upload-box">
+    <form [formGroup]="uploadForm">
+        <div class="icon">
+          <i class="fa-solid fa-2x fa-file-arrow-up"></i>
+        </div>
+
+        <p>Select your PDF file or drop it here</p>
+    
+        <input type="file" formControlName="file" (change)="onSelectFile($event)"  id="file" name="files[]" multiple accept="application/pdf">
+        
+    
+        <input class="submit" (click)="uploadFile()" type="submit" value="Upload" >
+    </form>
+   
+</div>-->
+<div class="upload-box">
+  <form class="form-inline" method="POST"  enctype="multipart/form-data">
+    <div class="form-group">
+      <div class="icon">
+        <i class="fa-solid fa-2x fa-file-arrow-up"></i>
+        <p>Select your PDF file or drop it here</p>
+        
+      </div>
+      <input class="select" type="file" class="form-control" id="pdfile" placeholder="file" accept="application/pdf" name="pdfFile"(change)="onSelectFile($event)" multiple required>
+    </div>
+    <div class="button" >
+      <input class="submit" type="submit" value="Upload Pdf" (click)="uploadFile()">
+    </div>
+    <a href="/extract">Extract The Data</a>
+    
+  </form>
+</div>
+
+
+
+
+

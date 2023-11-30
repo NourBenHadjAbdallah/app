@@ -1,0 +1,41 @@
+<app-tool></app-tool>
+<h1>File Parsed Data</h1>
+<div class="parsed" *ngIf="mydata">
+    <ul *ngFor="let data of data">
+      <li><label>Account Number:</label> {{data.AccountNumber}}</li>
+      <li><label>Agency:</label> {{data.Agency}}</li>
+      <li><label>Account Type:</label> {{data.AccountType}}</li>
+      <li><label>Customer Currency:</label> {{data.AccountCurrency}}</li>
+      <li><label>Customer Name:</label> {{data.CustomerName}}</li>
+      <li><label>Customer Address:</label> {{data.CustomerAddress}}</li>
+      <li><label>Bank:</label> {{data.BankNumber}}</li>
+      <li><label>StatementDate:</label> {{data.StatementDate}}</li>
+      <li><label>OpeningBalance:</label> {{data.OpeningBalance}}</li>
+      <li><label>ClosingBalance:</label> {{data.ClosingBalance}}</li>
+    </ul>
+  </div>
+  <h1>Table Transactions</h1>
+  <div class="table-container">
+    <table class="scrolling-table">
+        <thead>
+            <tr class="thead">
+              <th scope="col">Date</th>
+              <th scope="col">Description</th>
+              <th scope="col">Credit</th>
+              <th scope="col">Debit</th>
+            </tr>
+        </thead>
+        <tbody *ngIf="transactions">
+          <tr *ngFor="let transaction of transactions " style="text-align:center" >
+            <td>{{ transaction.Date  }}</td>
+            <td>{{ transaction.Description}}</td>
+            <td>{{ transaction.Credit }}</td>
+            <td>{{ transaction.Debit }}</td>
+          </tr>
+        </tbody>
+    </table>
+  </div>
+  
+
+
+

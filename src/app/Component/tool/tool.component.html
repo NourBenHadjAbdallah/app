@@ -1,0 +1,119 @@
+<!--<div class="head"> <div [ngClass]="getHeadClass()">
+    <div class="head-content">
+        <div class="head-content-left">
+            <div class="search-container">
+                <div class="normal-search">
+                    <input type="search" class="search" name="" id="" placeholder="Search...">
+                    <i class="fa-solid fa-magnifying-glass"></i>
+                </div>
+            </div>
+        </div>
+        <div class="head-content-right">
+            <div class="head-menu">
+                <div class="head-menu-item">
+                    <button class="head-menu-item-btn ripper">
+                        <i class="fa-solid fa-bell"></i>
+                    </button>
+                </div>
+                <div class="head-menu-item">
+                    <button class="head-menu-item-btn ripper">
+                        <i class="fa-solid fa-message"></i>
+                    </button>
+                </div>
+            </div>
+                <div class="head-user-avatar-container">
+                    <div class="head-user-avatar" (click)="toggleDropdown()">
+                      <i class="fa-solid fa-user"></i>
+                      <div class="circle-indicator pulse"></div>
+                    </div>
+                    <div class="dropdown-content" [ngClass]="{ 'show': isDropdownOpen }">
+                        <a href="#">Profile</a>
+                        <a href="#">Settings</a>
+                        <a href="/login">Logout</a>
+                    </div>
+                </div>
+        </div>
+    </div>
+    <div class="menu">
+        <a href="/main">Home</a>
+        <a href="/features">Features</a>
+        <a href="#">Data</a>
+        <a href="#">Doc</a>
+    </div>
+
+</div>-->
+
+<!--<div class="head">
+    <div class="head-content">
+        <div class="search-container">
+            <input type="search" class="search" name="" id="" placeholder="Search...">
+            <i class="fa-solid fa-magnifying-glass"></i>
+        </div>
+    <div class="head-menu">
+        <div class="head-menu-item">
+            <button class="head-menu-item-btn ripper">
+                <i class="fa-solid fa-bell"></i>
+            </button>
+            <button class="head-menu-item-btn ripper">
+                <i class="fa-solid fa-message"></i>
+            </button>
+            <div class="head-user-avatar-container">
+                <div class="head-user-avatar" (click)="toggleDropdown()">
+                    <i class="fa-solid fa-user"></i>
+                    <div class="circle-indicator pulse"></div>
+                </div>
+                <div class="dropdown-content" [ngClass]="{ 'show': isDropdownOpen }">
+                    <a href="#">Profile</a>
+                    <a href="#">Settings</a>
+                    <a href="/login">Logout</a>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    <div class="menu">
+        <a href="/main">Home</a>
+        <a href="/features">Features</a>
+        <a href="#">Data</a>
+        <a href="#">Doc</a>
+    </div>
+</div>-->
+
+
+
+
+<div class="content">
+    <div class="flex-container">
+        <input type="search" class="search" placeholder="Search...">
+        <button class="search-btn" type="search" dir="ltr" aria-autocomplete="list" aria-expanded="false" aria-label="Search" role="combobox" placeholder="Search..." autocomplete="off" spellcheck="false" aria-invalid="false" type="search" value="">
+            <i class="fa-solid fa-magnifying-glass"></i>
+        </button>
+    </div>
+
+    <div class="ripper-buttons ripper-right">
+        <i class="fa-solid fa-bell button"></i>
+        <i class="fa-solid fa-message button"></i>
+        <div class="head-user-avatar button" (click)="toggleDropdown()">
+            <i class="fa-solid fa-user"></i>
+            <div class="circle-indicator pulse"></div>
+        </div>
+        <div class="dropdown-content" [ngClass]="{ 'show': isDropdownOpen }">
+            <a href="#">Profile</a>
+            <a href="#">Settings</a>
+            <a href="/login">Logout</a>
+        </div>
+    </div>
+        
+
+         
+
+</div>
+
+<div class="menu">
+    <a href="/main">Home</a>
+    <a href="/features">Features</a>
+    <a href="/clients">Data</a>
+    <a href="/bankstatements">Doc</a>
+</div>
+
+

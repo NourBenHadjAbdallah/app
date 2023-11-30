@@ -1,0 +1,20 @@
+<div class="content">
+    <h2>Fields</h2>
+
+    <div class="inline" *ngIf="Fileds">
+        <tr class="field" *ngFor="let data of Fileds">
+            <td>{{data.fields}}</td>
+            <td><span class="'type">{{data.Type}}</span></td>
+            <td>
+                <button><i class="fa-solid fa-pen-to-square" style="color: #0d61f2;"></i></button>
+                <button><i class="fa-regular fa-trash-can" style="color: #ff0000;"></i></button>
+            </td>
+        </tr>
+        
+    </div>
+    <tr class="add">
+        <td><button><i class="fa-solid fa-plus"></i>New Field</button></td>
+        <td><button ><i class="fa-solid fa-plus"></i>New Table</button></td>
+    </tr>
+</div>
+

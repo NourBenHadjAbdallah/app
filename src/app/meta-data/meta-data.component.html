@@ -1,0 +1,13 @@
+
+<div *ngIf="metadata">
+  <ul *ngFor="let metaData of metadata">
+    <li scope="col"><span>File Name:</span>{{metaData.file_name}}</li>
+    <li scope="col"><span>Author:</span>{{metaData.author}}</li>
+    <li scope="col"><span>Pages:</span>{{metaData.pages }}</li>
+    <li scope="col"><span>Size:</span>{{metaData.file_size }}</li>
+    
+  </ul>
+</div>
+
+
+

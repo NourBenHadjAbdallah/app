@@ -1,0 +1,37 @@
+<app-tool></app-tool>
+<div class="content">
+    <h2>Customers</h2>
+    <div class="container">
+        <div class="search-container">
+            <input type="text" placeholder="Search Customer" class="search-input">
+            <button class="icon-button">
+                <i class="fa-solid fa-magnifying-glass"></i>
+            </button>
+        </div>
+
+      <div>
+        <table>
+    <thead>
+        <tr class="thead">
+            <th>Holder Name</th>
+            <th>Account Number</th>
+            <th>Action</th>
+        </tr>
+    </thead>
+    <tbody *ngIf="clients">
+        <tr class="body" *ngFor="let client of clients " >
+            <td>{{client.client_name}}</td>
+            <td>{{client.account_number}}</td>
+            <td>
+                <div class="action-buttons">
+                    <button>Edit
+                        <i class="fa-solid fa-pen-to-square"></i>
+                    </button>
+                    <button>Delete
+                        <i class="fa-solid fa-trash-can"></i>
+                    </button>
+                </div>
+            </td>
+        </tr>
+    </tbody>
+</table>
